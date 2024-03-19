@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVENTS 4U</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav_logo">EVENTS 4U</a>
+
+        <ul class="nav_items">
+          <li class="nav_item">
+            <a href="#" class="nav_link">Home</a>
+            <a href="create-event .html" id="create-event" class="nav_link">Create event</a>
+            <a href="#" class="nav_link">Services</a>
+            <a href="#contact" class="nav_link">Contact</a>
+          </li>
+        </ul>
+
+        <button class="button" id="form-open">Login</button>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        
+        <!-- Login From -->
+        <div class="form login_form">
+          <form action="process.php" method="POST">
+            <h2>Login</h2>
+
+            <div class="input_box">
+              <input type="email" name="email" placeholder="Enter your email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" name="password" placeholder="Enter your password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Remember me</label>
+              </span>
+              <a href="#" class="forgot_pw">Forgot password?</a>
+            </div>
+
+            <button type="submit" name="login">Login Now</button>
+            <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+          </form>
+        </div>
+
+        <!-- Signup From -->
+        <div class="form signup_form">
+          <form action="process.php" method="POST">
+            <h2>Signup</h2>
+
+            <div class="input_box">
+              <input type="email" name="email" placeholder="Enter your email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" name="password" placeholder="Create password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" name="confirm_password" placeholder="Confirm password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <button type="submit" name="signup">Signup Now</button>
+
+            <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+   
+
+  <section class="section section-top">
+      <div class="paras">
+          <p class="sectiontag">Experience the Magic of Music</p>
+          <p class="sectionsubtag text-small">Dive into the rhythm and melodies of live music events. Whether you're a fan of rock, pop, or classical tunes, our curated selection of music events promises an unforgettable journey for your senses.</p>
+      </div>
+      <div class="thumbnail">
+          <img src="music.jpeg" alt="music_event" class="imgfluid">
+      </div>
+  </section>
+
+  <section class="section section-middle">
+      <div class="paras">
+          <p class="sectiontag">Thrilling Sports Experiences Await</p>
+          <p class="sectionsubtag text-small">Get ready for heart-pounding moments and cheering crowds. Whether you're a passionate athlete or a dedicated fan, our sports events cater to every enthusiast. Join the excitement and witness epic competitions unfold.</p>
+      </div>
+      <div class="thumbnail">
+          <img src="sport.jpeg" alt="sports_event" class="imgfluid">
+      </div>
+  </section>
+  <section class="section section-bottom">
+      <div class="paras">
+          <p class="sectiontag">Immerse Yourself in Cultural Delights</p>
+          <p class="sectionsubtag text-small">Embark on a cultural journey that transcends boundaries. Our diverse range of cultural events celebrates traditions, art, and diversity. Experience the richness of global cultures and connect with like-minded individuals who appreciate the beauty of diversity.</p>
+      </div>
+      <div class="thumbnail">
+          <img src="cutural.jpeg" alt="cultural_event" class="imgfluid">
+      </div>
+  </section>
+
+  <section id="contact">
+      <div class="contact-container">
+          <h1 class="text-center">Get in Touch</h1>
+          <div class="form">
+              <input type="text" class="form-input" name="name" id="name" placeholder="Your Name">
+              <input type="tel" class="form-input" name="phone" id="phone" placeholder="Your Phone">
+              <input type="email" class="form-input" name="email" id="email" placeholder="Your Email">
+              <textarea class="form-input" name="message" id="message" cols="30" rows="5" placeholder="Your Message"></textarea>
+              <button class="btn-dark">Send Message</button>
+          </div>
+      </div>
+  </section>
+  
+    <script src="script.js"></script>
+
+    <script>
+   // Get the "Create Event" link element
+   const createEventLink = document.getElementById("create-event");
+
+// Event listener for the "Create Event" link
+createEventLink.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    // Open the new HTML page in a new tab
+    window.open("create-event .html", "_blank");
+});
+
+
+    
+  </script>
+  
+  
+  </body>
+</html>

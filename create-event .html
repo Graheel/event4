@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="create event.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Responsive Regisration Form </title> 
+</head>
+<body>
+    <!--=== header ===-->
+    <header class="header">
+        <nav class="nav">
+          <a href="#" class="nav_logo">EVENTS 4U</a>
+          <ul class="nav_items">
+            <li class="nav_item">
+              <a href="index.html" class="nav_link">Home</a>
+              <a href="create event .html" class="nav_link">Create event</a>
+              <a href="#" class="nav_link">Services</a>
+              <a href="#contact" class="nav_link">Contact</a>
+            </li>
+          </ul>
+  
+         
+        </nav>
+      </header>
+      
+    <div class="container">
+        <header>Upload Your Event Details</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Event Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Event Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Event</label>
+                            <input type="date" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Event catagory</label>
+                            <select required>
+                                <option disabled selected>Select catagory</option>
+                                <option>Sports</option>
+                                <option>Cultural</option>
+                                <option>Technology</option>
+                                <option>Music</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Event Loacation</label>
+                            <input type="text" placeholder="Full Address" required>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+        <div class="details photo">
+            <span class="title">Upload the Poster of Your Event</span>
+
+            <div class="fields">
+                <div class="input-field">
+                    <label for="photo">Choose a photo</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                </div>
+            </div>
+        </div>
+
+                    <button class="Btn">
+                        <span class="btnText">SUBMIT</span>
+                    </button>
+                </div> 
+            </div>
+
+            
+
+                
+            </div>
+        </form>
+    </div>
+  
+    <script src="create event.js"></script>
+</body>
+</html>
